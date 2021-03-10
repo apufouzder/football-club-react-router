@@ -1,4 +1,7 @@
 .custom-card{
-    border-top-right-radius: 40px !important;
-    border-bottom-left-radius: 40px !important;
+    transition: .2s ease-in-out;
+}
+.custom-card:hover{
+    border-top-left-radius: 40px !important;
+    background: chartreuse;
 }

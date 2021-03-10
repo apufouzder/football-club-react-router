@@ -5,6 +5,7 @@ import HeroBanner from '../../image/herobanner.jpg';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 
+
 const Home = () => {
     const [clubs, setClubs] = useState([]);
 
@@ -14,15 +15,13 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setClubs(data.teams))
     }, [])
-    console.log(clubs);
 
     return (
-        <div style={{ background: '#0e0a2a' }}>
+        <div style={{ background: '#06134e' }}>
             <NavBar />
             <div className="hero-banner mb-5" style={{ backgroundImage: `url(${HeroBanner})` }}>
                 <h1 className="text-white display-3">Football Clubs</h1>
             </div>
-
             <div className="container">
                 <div className="row">
                     {

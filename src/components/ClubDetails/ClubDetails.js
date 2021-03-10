@@ -11,6 +11,7 @@ import { Button } from 'react-bootstrap';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 
+
 const ClubDetails = () => {
     const { idTeam } = useParams();
     const [club, setClub] = useState([]);
@@ -22,7 +23,6 @@ const ClubDetails = () => {
             .then(res => res.json())
             .then(data => setClub(data.teams[0]))
     }, [idTeam])
-    console.log(club);
 
     return (
         <div style={{ background: '#0e0a2a' }}>
@@ -42,9 +42,7 @@ const ClubDetails = () => {
                     </div>
                     <div className="col-md-5">
                         {
-                            strGender ?
-                                <img src={male} alt="" />
-                                : <img src={female} alt="" />
+                            strGender ? <img src={male} alt="" /> : <img src={female} alt="" />
                         }
                     </div>
 
@@ -54,7 +52,6 @@ const ClubDetails = () => {
                     <a className="twitter" rel="noreferrer" target="_blank" href={"https://" + strTwitter}> <FaTwitter /> </a>
                     <a className="facebook" rel="noreferrer" target="_blank" href={"https://" + strFacebook}> <FaFacebookF /> </a>
                     <a className="youtube" rel="noreferrer" target="_blank" href={"https://" + strYoutube}> <FaYoutube /> </a>
-
                 </div>
             </div>
             <Footer />

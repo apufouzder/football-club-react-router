@@ -42,7 +42,7 @@
     background-color: #c4302b;
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
     .btn-style{
         margin-bottom: 15px;
     }

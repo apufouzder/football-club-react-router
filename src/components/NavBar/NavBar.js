@@ -7,7 +7,9 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-style" variant="dark">
-            <Navbar.Brand><Link as={Link} to="/home">FootBall Clubs</Link></Navbar.Brand>
+            <Navbar.Brand>
+                <Link to="/home" className="logo">FootBall Clubs</Link>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>

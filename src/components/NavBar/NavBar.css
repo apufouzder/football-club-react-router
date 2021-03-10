@@ -5,3 +5,13 @@
 .bg-style{
     background-color: #201661;
 }
+.logo {
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 600;
+    color: chartreuse;
+}
+.logo:hover{
+    text-decoration: none;
+    color: chartreuse;
+}

@@ -5,9 +5,10 @@ import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import './Contact.css';
 
+
 const Contact = () => {
     return (
-        <div>
+        <>
             <NavBar />
             <div className="banner-contact" style={{ backgroundImage: `url(${HeroBanner})` }}>
                 <div className="container">
@@ -35,7 +36,7 @@ const Contact = () => {
                 </div>
             </div>
             <Footer />
-        </div>
+        </>
     );
 };
 
