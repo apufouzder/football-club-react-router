@@ -1,14 +1,13 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';
 import './Club.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Club = (props) => {
-    const { idTeam, strTeam, strTeamBadge, strTeamFanart3, strSport } = props.club;
+    const { idTeam, strTeam, strTeamBadge, strSport } = props.club;
 
     const history = useHistory();
     const handleClick = (id) => {

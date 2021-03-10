@@ -51,9 +51,9 @@ const ClubDetails = () => {
                 </div>
                 <p className="text-white">{strDescriptionEN}</p>
                 <div className="social-icon text-center py-5 m-auto">
-                    <a className="twitter" target="_blank" href={strTwitter}> <FaTwitter /> </a>
-                    <Link className="facebook" target="_blank" to={strFacebook}> <FaFacebookF /> </Link>
-                    <Link className="youtube" target="_blank" to={strYoutube}> <FaYoutube /> </Link>
+                    <a className="twitter" rel="noreferrer" target="_blank" href={"https://" + strTwitter}> <FaTwitter /> </a>
+                    <a className="facebook" rel="noreferrer" target="_blank" href={"https://" + strFacebook}> <FaFacebookF /> </a>
+                    <a className="youtube" rel="noreferrer" target="_blank" href={"https://" + strYoutube}> <FaYoutube /> </a>
 
                 </div>
             </div>
