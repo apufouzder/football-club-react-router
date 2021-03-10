@@ -1,0 +1,49 @@
+.custom-style {
+    background: #22ab00;
+    padding: 25px 13px;
+    border-radius: 0.8rem;
+    color: white;
+}
+.col-md-5 img {
+    width: 100%;
+}
+.banner{
+    padding: 80px;
+    opacity: 0.8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social-icon img {
+    height: 65px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.social-icon a {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    font-size: 30px;
+    place-items: center;
+    display: inline-grid;
+    border-radius: 100%;
+    color: white;
+}
+.social-icon a:hover{
+    color: white;
+}
+.facebook{
+    background-color: #4267B2;
+}
+.twitter{
+    background-color:#1DA1F2;
+}
+.youtube{
+    background-color: #c4302b;
+}
+
+@media only screen and (max-width: 768px){
+    .btn-style{
+        margin-bottom: 15px;
+    }
+}
