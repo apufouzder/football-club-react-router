@@ -42,7 +42,7 @@ const ClubDetails = () => {
                     </div>
                     <div className="col-md-5">
                         {
-                            strGender ? <img src={male} alt="" /> : <img src={female} alt="" />
+                            strGender === 'Male' ? <img src={male} alt="" /> : <img src={female} alt="" />
                         }
                     </div>
 
